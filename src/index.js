@@ -73,6 +73,7 @@ async function Main() {
             executablePath: revisionInfo.executablePath,
             headless: appconfig.appconfig.headless,
             userDataDir: path.join(process.cwd(), "ChromeSession"),
+            defaultViewport:null,
             devtools: false,
             args: [...constants.DEFAULT_CHROMIUM_ARGS, ...pptrArgv], ...extraArguments
         });
